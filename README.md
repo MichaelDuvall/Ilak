@@ -49,6 +49,38 @@ Install Snort
 
 $ apt-get install snort
 
+#you may have to specific the interfaces to monitor 
+
+#Use VIM or nano or your favorite text editor
+#tocheck if ICMP rules are enabled 
+
+$nano /etc/sort/snort.conf 
+
+#feel free to change the $HOME_NET variable from to to your local ip range
+#Debian users may already have this configed here: /etc/snort/snort.debian.conf
+
+#To execute and check log 
+ $snort -c /etc/snort/snort.conf -l /var/log/snort/
+ 
+ Check to see if the log is working correctly and experiment with the settings/flags/args for the program if you are in a safe testing enviroment and what to learn more. 
+ #use 
+ $snort --h
+ 
+ to view the robust features of the application.
+ 
+ =========================================================================================================
+ 
+ Install TOR for better privacy 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 
 
